@@ -1,0 +1,60 @@
+<!-- 서버 시작할때 콘솔 입력
+service apache2 restart
+service mysql start
+
+첫 시작 url : https://cafe-in-yrlxk.run.goorm.site/cafe_in/
+공유 링크 : https://goor.me/qBYBcP9beg32Zhv78
+
+db 설정 : https://cafe-in-yrlxk.run.goorm.site/phpmyadmin
+사용자 ID : "root" or "phpmyadmin"
+암호 : "1234" -->
+
+<!doctype html>
+<html lang="ko">
+<head>
+<title>cafe-in</title>
+<meta charset="utf-8">
+
+<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, width=device-width, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/app.common.js"></script>
+	<style>
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .content {
+    overflow: auto;
+  }
+
+  .wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+</style>
+</head>
+
+<body class="app_index">
+
+<div id="content" class="content">
+	<div class="wrap">
+		<img src="img/index.png" alt="index">
+
+		<input type="submit" value="로그인" class="login_btn block_btn" onClick="location.href='login.html'">
+		<input type="submit" value="회원가입" class="join_btn block_btn" onClick="location.href='join.html'">
+	<div>
+</div>
+
+</body>
+</html>
